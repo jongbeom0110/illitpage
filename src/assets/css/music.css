@@ -1,0 +1,200 @@
+body {
+  background: linear-gradient(to right, #f8f9fa, #e0e0e0);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  animation: fadeIn 1s;
+  margin: 0; /* 기본 margin 제거 */
+  padding: 0; /* 기본 padding 제거 */
+  display: flex; /* 플렉스 박스를 사용하여 콘텐츠 정렬 */
+  flex-direction: column; /* 세로 방향으로 배치 */
+}
+
+nav {
+  background-color: rgba(52, 58, 64, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%; /* 전체 너비 */
+  position: fixed; /* 고정 위치 설정 */
+  top: 0; /* 화면 상단에 위치 */
+  left: 0; /* 화면 왼쪽에 위치 */
+  z-index: 1000; /* 다른 요소들 위에 표시 */
+}
+
+.navbar-brand,
+.nav-link {
+  color: #ffffff !important;
+  transition: color 0.3s;
+  padding: 15px; /* 패딩 추가 */
+  display: block; /* 링크를 블록 요소로 설정하여 전체 영역 클릭 가능 */
+}
+
+.navbar-nav {
+  display: flex; /* 네비게이션 링크를 가로로 배치 */
+}
+
+.navbar-nav .nav-link {
+  margin-right: 15px; /* 링크 사이 여백 추가 */
+}
+
+.container {
+  flex: 1; /* 나머지 공간을 차지 */
+  margin-top: 60px; /* 사이드바 높이 만큼 위쪽 여백 추가 */
+  padding: 20px;
+}
+
+h2 {
+  margin: 30px 0 20px;
+  font-size: 2.5rem;
+  color: #343a40;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.lead {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.btn-primary,
+.btn-warning,
+.btn-secondary {
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.3s, transform 0.3s;
+  padding: 10px 20px; /* 버튼 패딩 추가 */
+  margin: 10px 0; /* 버튼 사이 마진 추가 */
+  cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능함을 표시 */
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.btn-warning {
+  background-color: #ffc107;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: #28a745; /* 새 버튼 색상 */
+}
+
+.btn-secondary:hover {
+  background-color: #218838; /* 새 버튼 hover 색상 */
+}
+
+.card {
+  width: 95%;
+  margin: 15px auto;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 비율 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+.card-body iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.card-body:hover iframe {
+  transform: scale(1.05);
+}
+
+#memberButtons {
+  margin-top: 20px;
+}
+
+#videoListTitle {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: rgba(52, 58, 64, 0.9);
+  color: #ffffff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.btn-primary,
+.btn-warning,
+.btn-secondary {
+  border: none;
+  border-radius: 50px; /* 버튼을 둥글게 */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* 그림자 효과 추가 */
+  padding: 12px 25px; /* 패딩 조정 */
+  margin: 10px 0; /* 버튼 사이 마진 추가 */
+  cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능함을 표시 */
+  font-weight: bold; /* 글씨 두껍게 */
+}
+
+.btn-primary {
+  background-color: #007bff; /* 기본 색상 */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* 호버 색상 */
+  transform: translateY(-2px); /* 위로 살짝 올라가는 효과 */
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4); /* 호버 시 그림자 효과 */
+}
+
+.btn-warning {
+  background-color: #ffc107; /* 기본 색상 */
+}
+
+.btn-warning:hover {
+  background-color: #e0a800; /* 호버 색상 */
+  transform: translateY(-2px); /* 위로 살짝 올라가는 효과 */
+  box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4); /* 호버 시 그림자 효과 */
+}
+
+.btn-secondary {
+  background-color: #28a745; /* 기본 색상 */
+}
+
+.btn-secondary:hover {
+  background-color: #218838; /* 호버 색상 */
+  transform: translateY(-2px); /* 위로 살짝 올라가는 효과 */
+  box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4); /* 호버 시 그림자 효과 */
+}

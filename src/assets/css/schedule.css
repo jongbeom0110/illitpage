@@ -1,0 +1,73 @@
+body {
+    margin: 20px;
+    background-color: #f0f4f8; /* 연한 회색 배경 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 더 현대적인 글꼴 */
+  }
+  h1 {
+    color: #0056b3; /* 좀 더 깊은 파란색 */
+    margin-bottom: 20px;
+    font-size: 2.5rem; /* 제목 크기 증가 */
+    text-align: center; /* 중앙 정렬 */
+  }
+  .calendar-container {
+    border: 2px solid #0056b3; /* 진한 파란색 테두리 */
+    border-radius: 10px; /* 더 부드러운 모서리 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 추가 */
+    overflow: hidden;
+  }
+  table {
+    margin: auto;
+    width: 100%;
+    table-layout: fixed; /* 균일한 셀 크기 */
+  }
+  th {
+    background-color: #0056b3; /* 진한 파란색 */
+    color: white;
+    font-size: 1.4rem; /* 헤더 글자 크기 증가 */
+    padding: 15px; /* 패딩 추가 */
+  }
+  td {
+    height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* 배경색과 변형에 대한 트랜지션 */
+  }
+  td:hover {
+    background-color: #e1ecf4; /* 마우스 오버 시 연한 파란색 */
+    transform: scale(1.05); /* 마우스 오버 시 확대 효과 */
+  }
+  /* 일요일과 토요일 스타일 */
+  .sunday {
+    background-color: #f8d7da; /* 연한 빨간색 */
+    color: #721c24; /* 어두운 빨간색 */
+    font-weight: bold; /* 강조를 위해 글자 두껍게 */
+  }
+  .saturday {
+    background-color: #cfe2ff; /* 연한 파란색 */
+    color: #1a73e8; /* 어두운 파란색 */
+    font-weight: bold; /* 강조를 위해 글자 두껍게 */
+  }
+  .schedule {
+    margin-top: 20px;
+    border: 1px solid #0056b3; /* 진한 파란색 테두리 */
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px; /* 패딩 추가 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 추가 */
+  }
+  .schedule h2 {
+    color: #0056b3; /* 진한 파란색 */
+    margin-bottom: 15px; /* 아래쪽 여백 추가 */
+  }
+  .navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* 아래쪽 여백 증가 */
+  }
+  .navigation button {
+    margin: 0 10px; /* 버튼 간격 증가 */
+    padding: 10px 20px; /* 버튼 패딩 증가 */
+    font-size: 1.1rem; /* 버튼 글자 크기 증가 */
+  }
