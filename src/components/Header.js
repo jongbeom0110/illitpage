@@ -6,7 +6,7 @@ function Header() {
       <div className="profile-img">
         <img
           className="img-fluid rounded-circle"
-          src="%PUBLIC_URL%/assets/img/profile.jpg"
+          src="/assets/img/profile.jpg"
           width="40px"
           height="40px"
           alt="프로필"

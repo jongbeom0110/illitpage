@@ -68,7 +68,7 @@ body {
   position: absolute;
   width: 50px; /* 발자국 너비 조정 */
   height: 50px; /* 발자국 높이 조정 */
-  background-image: url("../src/assets/img/footprint.jpg"); /* 발자국 이미지 URL */
+  background-image: url("../public/assets/img/footprint.jpg"); /* 발자국 이미지 URL */
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 1; /* 발자국이 항상 보이도록 설정 */

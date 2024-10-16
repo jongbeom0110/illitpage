@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import MainScreen from "./components/MainScreen";
@@ -6,11 +6,25 @@ import Members from "./components/Members";
 import MvSection from "./components/MvSection";
 import HistorySection from "./components/HistorySection";
 import ContactSection from "./components/ContactSection";
-import "./index.css"
-import "./assets/css/style.min.css"
-
+import AOS from 'aos';
+import Swiper from "swiper";
+import "./index.css";
+import "aos/dist/aos.css"
 
 function App() {
+    useEffect(() => {
+        // AOS 초기화
+        AOS.init();
+
+        // Swiper 초기화 (사용되는 곳에서 필요할 경우)
+        new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    }, []);
+
     return (
         <Router>
             <Routes>

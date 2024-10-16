@@ -659,9 +659,7 @@ h6 {
   background-size: cover;
 }
 
-.bg-img-1 {
-  background-image: url(../images/robot.png);
-}
+
 
 .bg-home-1 {
   padding: 300px 0 100px 0;
@@ -806,13 +804,6 @@ h6 {
   }
 }
 
-.about-img {
-  background-image: url(../580dae98eb9d31b10d08.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 200px 0;
-}
 
 .ai-about-detail .icon {
   height: 60px;
@@ -867,7 +858,6 @@ h6 {
 }
 
 .video-section {
-  background-image: url(../2a735559c4ed686d2a18.webp);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1133,8 +1123,4 @@ label {
   z-index: 9;
   background-color: #fff;
   padding: 2px 16px;
-}
-
-.bg-img-2 {
-  background-image: url(../images/test1.png);
 }
