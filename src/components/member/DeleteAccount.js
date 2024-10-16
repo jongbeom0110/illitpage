@@ -1,10 +1,4 @@
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '/libs/remixicon/fonts/remixicon.css';
-import '/libs/swiper/swiper-bundle.css';
-import '/css/style.min.css';
-import '/css/header.css';
-import '/css/member/delete.css';
 
 function DeleteAccount() {
     const [isAgreed, setIsAgreed] = useState(false); // 이용약관 동의 체크 상태

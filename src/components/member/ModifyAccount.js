@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS 가져오기
-import '/libs/remixicon/fonts/remixicon.css'; // Remixicon 가져오기
-import '/libs/swiper/swiper-bundle.css'; // Swiper CSS 가져오기
-import '/css/style.min.css'; // Custom Style 가져오기
-import '/css/member/idReset.css'; // Custom ID Reset Style 가져오기
+
 
 function ResetPassword() {
     const [email, setEmail] = useState('');

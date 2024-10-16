@@ -1,9 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import '/libs/remixicon/fonts/remixicon.css';
-import '/libs/bootstrap/css/bootstrap.min.css';
-import '/css/style.min.css';
-import '/css/header.css';
-import '/css/myinfo.css';
 
 function ViewProfile() {
   const [view, setView] = useState({

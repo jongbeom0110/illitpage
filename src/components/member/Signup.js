@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'libs/remixicon/fonts/remixicon.css';
-import 'libs/swiper/swiper-bundle.css';
 
 
 function Signup() {
