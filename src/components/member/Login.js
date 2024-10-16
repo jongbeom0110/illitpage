@@ -50,15 +50,15 @@ function Login() {
         <>
             <html lang="ko">
             <head>
-                <link rel="stylesheet" href="/libs/remixicon/fonts/remixicon.css" />
-                <link rel="stylesheet" href="/libs/swiper/swiper-bundle.css" />
-                <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.min.css" />
-                <link rel="stylesheet" href="/css/style.min.css" />
-                <meta charset="UTF-8" />
-                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <link rel="stylesheet" href="/assets/libs/remixicon/fonts/remixicon.css" />
+                <link rel="stylesheet" href="/assets/libs/swiper/swiper-bundle.css" />
+                <link rel="stylesheet" href="/assets/libs/bootstrap/css/bootstrap.min.css" />
+                <link rel="stylesheet" href="/assets/css/style.min.css" />
+                <meta charSet="UTF-8" />
+                <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>ILLITPage 로그인 페이지</title>
-                <link rel="shortcut icon" type="images/x-icon" href="/img/profile.jpg" />
+                <link rel="shortcut icon" type="images/x-icon" href="/assets/img/profile.jpg" />
             </head>
 
             <body>

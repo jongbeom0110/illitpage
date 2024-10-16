@@ -10,6 +10,8 @@ import AOS from 'aos';
 import Swiper from "swiper";
 import "./index.css";
 import "aos/dist/aos.css"
+import Signup from "./components/member/Signup";
+import Login from "./components/member/Login";
 
 function App() {
     useEffect(() => {
@@ -30,6 +32,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<MainScreen />} />
                 <Route path="/index" element={<MainContent />} />
+                <Route path="/signup" element={<Signup/>}/>
+                <Route path="/login" element={<Login />} />
             </Routes>
         </Router>
     );

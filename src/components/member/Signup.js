@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../libs/remixicon/fonts/remixicon.css';
-import '../libs/swiper/swiper-bundle.css';
-import '../css/style.min.css';
-import '../css/signup.css';
+import 'libs/remixicon/fonts/remixicon.css';
+import 'libs/swiper/swiper-bundle.css';
+import 'css/style.min.css';
+import '/assets/css/signup.css';
 
 function Signup() {
     const [name, setName] = useState('');
@@ -149,7 +149,7 @@ function Signup() {
                             </div>
                         </div>
                         <div className="col-lg-5 text-start">
-                            <img src="%PUBLIC_URL%/assets/img/illit.png" alt="" className="img-fluid" />
+                            <img src="/assets/img/illit.png" alt="" className="img-fluid" />
                         </div>
                     </div>
                 </div>

@@ -18,10 +18,10 @@ function Header() {
       <nav id="navmenu" className="navmenu">
         <ul className="navbar-nav nav-btn align-items-center">
           <li className="nav-item me-3">
-            <a className="signup-link" href="/member/signup.js">가입하기</a>
+            <a className="signup-link" href="/member/signup">가입하기</a>
           </li>
           <li className="nav-item me-3">
-            <a className="login-link" href="/member/login.js">로그인</a>
+            <a className="login-link" href="/member/login">로그인</a>
           </li>
         </ul>
       </nav>
