@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'libs/remixicon/fonts/remixicon.css';
 import 'libs/swiper/swiper-bundle.css';
 import 'css/style.min.css';
-import './assets/css/signup.css';
 
 function Signup() {
     const [name, setName] = useState('');
@@ -139,7 +138,7 @@ function Signup() {
                                     {formStep === 3 && (
                                         <div id="third-form-container">
                                             <div className="text-center mt-3 px-lg-4 px-2">
-                                                <img src="%PUBLIC_URL%/assets/img/profile.jpg" alt="프로필" />
+                                                <img src="/assets/img/profile.jpg" alt="프로필" />
                                                 <h5 className="text-primary fw-semibold">가입이 완료되었습니다!</h5>
                                                 <p className="text-muted mb-0">잠시 후 메인 페이지로 이동합니다.</p>
                                             </div>
@@ -149,7 +148,7 @@ function Signup() {
                             </div>
                         </div>
                         <div className="col-lg-5 text-start">
-                            <img src="/assets/img/illit.png" alt="" className="img-fluid" />
+                            <img src="/assets/img/illit.png" alt="ILLIT 로고" className="img-fluid" />
                         </div>
                     </div>
                 </div>
