@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'libs/remixicon/fonts/remixicon.css';
 import 'libs/swiper/swiper-bundle.css';
 import 'css/style.min.css';
-import '/assets/css/signup.css';
+import './assets/css/signup.css';
 
 function Signup() {
     const [name, setName] = useState('');
