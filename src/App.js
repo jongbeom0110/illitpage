@@ -32,8 +32,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<MainScreen />} />
                 <Route path="/index" element={<MainContent />} />
-                <Route path="/signup" element={<Signup/>}/>
-                <Route path="/login" element={<Login />} />
+                <Route path="/member/signup" element={<Signup/>}/>
+                <Route path="/member/login" element={<Login />} />
             </Routes>
         </Router>
     );
