@@ -2,17 +2,14 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import MainScreen from "./components/MainScreen";
-import Members from "./components/Members";
-import MvSection from "./components/MvSection";
-import HistorySection from "./components/HistorySection";
-import ContactSection from "./components/ContactSection";
+import MainPage from "./components/MainPage";
 import AOS from 'aos';
 import Swiper from "swiper";
 import "./index.css";
 import "aos/dist/aos.css"
 import Signup from "./components/member/Signup";
 import Login from "./components/member/Login";
-
+import Footer from "./components/Footer";
 function App() {
     useEffect(() => {
         // AOS 초기화
@@ -31,7 +28,7 @@ function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<MainScreen />} />
-                <Route path="/index" element={<MainContent />} />
+                <Route path="/index" element={<MainContent/>} />
                 <Route path="/member/signup" element={<Signup/>}/>
                 <Route path="/member/login" element={<Login />} />
             </Routes>
@@ -42,13 +39,11 @@ function App() {
 // 메인 화면과 나머지 컴포넌트를 포함하는 함수형 컴포넌트
 function MainContent() {
     return (
-        <>
+        <div>
             <Header />
-            <Members />
-            <MvSection />
-            <HistorySection />
-            <ContactSection />
-        </>
+            <MainPage/>
+            <Footer/>
+        </div>
     );
 }
 

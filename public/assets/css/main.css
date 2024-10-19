@@ -550,9 +550,8 @@ h6 {
     }
 
     /*--------------------------------------------------------------
-    # Hero Section
-    --------------------------------------------------------------*/
-
+# Hero Section
+--------------------------------------------------------------*/
     .hero {
         width: 100%;
         min-height: 100vh;
@@ -561,40 +560,47 @@ h6 {
         display: flex;
         align-items: center;
         justify-content: center;
+        text-align: center; /* 텍스트 중앙 정렬 */
     }
 
     .hero img {
         position: absolute;
-        inset: 0;
-        display: block;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        object-fit: cover;
-        z-index: 1;
+        object-fit: cover; /* 배경 이미지를 화면에 맞추기 */
+        z-index: 1; /* 이미지가 뒤에 오도록 설정 */
     }
 
     .hero:before {
         content: "";
-        background: color-mix(in srgb, var(--background-color), transparent 70%);
+        background: rgba(0, 0, 0, 0.5); /* 어두운 오버레이 추가 */
         position: absolute;
-        inset: 0;
-        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2; /* 오버레이가 이미지보다 앞에 오도록 설정 */
     }
 
     .hero .container {
         position: relative;
-        z-index: 3;
+        z-index: 3; /* 텍스트가 이미지와 오버레이보다 앞에 오도록 설정 */
+        padding-top: 20vh; /* 텍스트가 화면 중간에 오도록 설정 */
     }
 
     .hero h2 {
         margin: 0;
-        font-size: 64px;
+        font-size: 48px; /* 글씨 크기 조정 */
         font-weight: 700;
+        color: #fff; /* 글씨 색상 */
     }
 
     .hero p {
         margin: 5px 0 0 0;
-        font-size: 26px;
+        font-size: 24px;
+        color: #fff;
     }
 
     .hero p span {
@@ -602,33 +608,22 @@ h6 {
         border-bottom: 2px solid var(--accent-color);
     }
 
-    .hero .social-links {
-        margin-top: 25px;
-    }
-
-    .hero .social-links a {
-        font-size: 24px;
-        display: inline-block;
-        color: color-mix(in srgb, var(--default-color), transparent 50%);
-        line-height: 1;
-        margin-right: 20px;
-        transition: 0.3s;
-    }
-
-    .hero .social-links a:hover {
-        color: var(--accent-color);
-    }
-
+    /*--------------------------------------------------------------
+    # Mobile responsiveness (모바일 대응)
+    --------------------------------------------------------------*/
     @media (max-width: 768px) {
         .hero h2 {
-            font-size: 32px;
+            font-size: 32px; /* 모바일에서 글씨 크기 조정 */
         }
 
         .hero p {
             font-size: 20px;
         }
-    }
 
+        .hero .container {
+            padding-top: 10vh; /* 모바일에서 텍스트 위치 조정 */
+        }
+    }
     /*--------------------------------------------------------------
     # About Section
     --------------------------------------------------------------*/
