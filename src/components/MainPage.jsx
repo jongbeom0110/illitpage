@@ -118,7 +118,7 @@ function MainPage() {
                                         className="card-img-top"
                                         src={member.imageUrl}
                                         alt={`${member.name} 이미지`}
-                                        style={member.name === "모카" ? { height: "489.16px", objectFit: "cover" } : {}}
+                                        style={member.name === "모카" ? { height: "559.13px", objectFit: "cover" } : {}}
                                     />
                                     <div className="card-body text-center">
                                         <h5 className="card-title">{member.name}</h5>
