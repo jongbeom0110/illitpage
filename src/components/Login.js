@@ -119,7 +119,7 @@ function Login() {
                                                 <p className="text-center mt-3 mb-0">
                                                     <small>
                                                         계정이 없으신가요?{' '}
-                                                        <a href="/signup" className="fs-6 text-primary">
+                                                        <a href="/member/signup" className="fs-6 text-primary">
                                                             회원가입!
                                                         </a>
                                                     </small>

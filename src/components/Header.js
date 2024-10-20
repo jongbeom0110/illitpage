@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Header = () => {
+const Header = ({ formData }) => {
     const [headerShow, setHeaderShow] = useState(false);
 
     const toggleHeader = () => {
@@ -12,7 +12,7 @@ const Header = () => {
             <i className={`header-toggle d-xl-none bi ${headerShow ? 'bi-x' : 'bi-list'}`} onClick={toggleHeader}></i>
 
             <div className="profile-img">
-                <img src="/assets/img/profile.jpg" alt="profile" className="img-fluid rounded-circle" />
+                <img src={`/uploads/${formData?.MProfile}`} alt="프로필 이미지"/>
             </div>
 
             <a className="logo d-flex align-items-center justify-content-center" href="/">

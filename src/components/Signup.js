@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 function Signup() {
     const [name, setName] = useState('');
     const [termsAgreed, setTermsAgreed] = useState(false);
@@ -14,7 +13,6 @@ function Signup() {
 
     const handleFirstFormSubmit = (event) => {
         event.preventDefault();
-
         if (!termsAgreed) {
             alert('이용약관에 동의해야 합니다.');
             return;
@@ -31,6 +29,7 @@ function Signup() {
         const checkPw = document.getElementById('CheckPw').value;
         if (formData.MPw !== checkPw) {
             alert('비밀번호가 일치하지 않습니다.');
+            document.getElementById('CheckPw').focus();
             return;
         }
 
@@ -42,7 +41,7 @@ function Signup() {
         formDataToSend.append('MNickName', formData.MNickName);
 
         try {
-            const response = await fetch('/mJoin', {
+            const response = await fetch('http://localhost:3000/signup', {
                 method: 'POST',
                 body: formDataToSend,
             });
@@ -135,7 +134,7 @@ function Signup() {
                                     {formStep === 3 && (
                                         <div id="third-form-container">
                                             <div className="text-center mt-3 px-lg-4 px-2">
-                                                <img src="/assets/img/profile.jpg" alt="프로필" />
+                                                <img src={`/uploads/${formData.MProfile}`} alt="프로필 이미지" />
                                                 <h5 className="text-primary fw-semibold">가입이 완료되었습니다!</h5>
                                                 <p className="text-muted mb-0">잠시 후 메인 페이지로 이동합니다.</p>
                                             </div>
